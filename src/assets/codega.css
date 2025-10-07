@@ -1,0 +1,57 @@
+/* Police Codega - version de base */
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variantes Codega - utilisent le fichier de base avec font-weight simulé */
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codega';
+    src: url('/assets/fonts/Codega.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

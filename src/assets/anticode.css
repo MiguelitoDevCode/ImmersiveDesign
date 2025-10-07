@@ -1,0 +1,193 @@
+/* ============================================================ */
+/* POLICE ANTICODE - DEADPOOL & WOLVERINE TEMPLE               */
+/* ============================================================ */
+
+@font-face {
+  font-family: 'Anticode';
+  src: url('/assets/fonts/Anticode.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variantes de poids pour Anticode */
+.font-anticode {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+.font-anticode-thin {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 100;
+}
+
+.font-anticode-light {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 300;
+}
+
+.font-anticode-regular {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 400;
+}
+
+.font-anticode-medium {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 500;
+}
+
+.font-anticode-semibold {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 600;
+}
+
+.font-anticode-bold {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 700;
+}
+
+.font-anticode-extrabold {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 800;
+}
+
+.font-anticode-black {
+  font-family: 'Anticode', 'Courier New', monospace;
+  font-weight: 900;
+}
+
+/* ============================================================ */
+/* AMÉLIORATION TEMPLE AVEC ANTICODE                           */
+/* ============================================================ */
+
+/* Classes utilitaires pour les effets de texte */
+.text-glow-scarlet {
+  text-shadow: 
+    0 0 10px var(--scarlet-500),
+    0 0 20px var(--scarlet-400),
+    0 0 30px var(--scarlet-300);
+}
+
+.text-glow-gold {
+  text-shadow: 
+    0 0 10px #ffd700,
+    0 0 20px #ffed4e,
+    0 0 30px #fbbf24;
+}
+
+.text-glow-white {
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+/* Animations spéciales pour Anticode */
+@keyframes anticode-pulse {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor;
+  }
+  50% {
+    transform: scale(1.05);
+    text-shadow: 
+      0 0 20px currentColor,
+      0 0 40px currentColor,
+      0 0 60px currentColor;
+  }
+}
+
+@keyframes anticode-glow {
+  0%, 100% {
+    filter: brightness(1) contrast(1);
+  }
+  50% {
+    filter: brightness(1.2) contrast(1.1);
+  }
+}
+
+.animate-anticode-pulse {
+  animation: anticode-pulse 2s ease-in-out infinite;
+}
+
+.animate-anticode-glow {
+  animation: anticode-glow 3s ease-in-out infinite;
+}
+
+/* ============================================================ */
+/* STYLES SPÉCIAUX POUR LE LOADER                              */
+/* ============================================================ */
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 2s linear infinite;
+}
+
+/* ============================================================ */
+/* EFFETS PARTICULES THÉMATIQUES                               */
+/* ============================================================ */
+
+.blood-particle {
+  filter: drop-shadow(0 0 3px rgba(239, 68, 68, 0.8));
+}
+
+.metal-particle {
+  filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.9));
+  background: linear-gradient(45deg, #fbbf24, #f59e0b);
+}
+
+.energy-particle {
+  background: radial-gradient(circle, var(--scarlet-400), var(--scarlet-600));
+  filter: drop-shadow(0 0 8px var(--scarlet-500));
+}
+
+.spark-particle {
+  background: radial-gradient(circle, #ffffff, #e5e7eb);
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+}
+
+/* ============================================================ */
+/* AMÉLIORATION DES BORDURES                                   */
+/* ============================================================ */
+
+.border-3 {
+  border-width: 3px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+/* ============================================================ */
+/* STYLES RESPONSIVE POUR ANTICODE                             */
+/* ============================================================ */
+
+@media (max-width: 640px) {
+  .font-anticode {
+    letter-spacing: 0.05em;
+  }
+  
+  .text-glow-scarlet,
+  .text-glow-gold,
+  .text-glow-white {
+    text-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-anticode-pulse {
+    animation-duration: 1.5s;
+  }
+}

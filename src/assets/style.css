@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layers Tailwind pour les variables Codega */
+@layer base {
+  .font-codega {
+    font-family: var(--font-codega) !important;
+  }
+}
+
+@layer components {
+  /* Classes Colmeak principales */
+  .colmeak-light {
+    font-family: var(--font-colmeak-light) !important;
+    font-weight: 300;
+  }
+  
+  .colmeak-regular {
+    font-family: var(--font-colmeak-regular) !important;
+    font-weight: 400;
+  }
+  
+  .colmeak-medium {
+    font-family: var(--font-colmeak-medium) !important;
+    font-weight: 500;
+  }
+  
+  .colmeak-semibold {
+    font-family: var(--font-colmeak-semibold) !important;
+    font-weight: 600;
+  }
+  
+  .colmeak-bold {
+    font-family: var(--font-colmeak-bold) !important;
+    font-weight: 700;
+  }
+  
+  .colmeak-extrabold {
+    font-family: var(--font-colmeak-extrabold) !important;
+    font-weight: 800;
+  }
+  
+  .colmeak-black {
+    font-family: var(--font-colmeak-black) !important;
+    font-weight: 900;
+  }
+  
+  /* Classes de compatibilité Codega -> Colmeak */
+  .codega-light {
+    font-family: var(--font-colmeak-light) !important;
+    font-weight: 300;
+  }
+  
+  .codega-regular {
+    font-family: var(--font-colmeak-regular) !important;
+    font-weight: 400;
+  }
+  
+  .codega-medium {
+    font-family: var(--font-colmeak-medium) !important;
+    font-weight: 500;
+  }
+  
+  .codega-semibold {
+    font-family: var(--font-colmeak-semibold) !important;
+    font-weight: 600;
+  }
+  
+  .codega-bold {
+    font-family: var(--font-colmeak-bold) !important;
+    font-weight: 700;
+  }
+  
+  .codega-extrabold {
+    font-family: var(--font-colmeak-extrabold) !important;
+    font-weight: 800;
+  }
+  
+  .codega-black {
+    font-family: var(--font-colmeak-black) !important;
+    font-weight: 900;
+  }
+}
+
+@layer utilities {
+  /* Classes personnalisées pour les effets clip-path */
+  .clip-path-futuristic {
+    clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%);
+  }
+  
+  .clip-path-primary {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+  }
+  
+  .clip-path-secondary {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+}
