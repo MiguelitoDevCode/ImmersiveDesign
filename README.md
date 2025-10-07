@@ -97,9 +97,6 @@ Pour créer vos propres designs immersifs :
 
 Les suggestions de sites immersifs supplémentaires sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
 
-## 📄 Licence
-
-Ce dépôt est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 
 ---
 
